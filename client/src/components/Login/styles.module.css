@@ -1,0 +1,140 @@
+/* Button animation */
+@keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	50% {
+	  transform: scale(1.1);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+  
+  /* Apply animation on button click */
+  .green_btn:active {
+	animation: pulse 0.3s ease;
+  }
+  
+  /* Other existing styles */
+  .login_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f8f9fa;
+	padding: 15px;
+  }
+  
+  .login_form_container {
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	width: 100%;
+	max-width: 800px;
+	transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .left {
+	flex: 2;
+	color: black;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .right {
+	flex: 1;
+	background-color: #4CAF50; /* Sidebar background color */
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	box-sizing: border-box; /* Include padding in width */
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+  }
+  
+  .form_container {
+	display: flex;
+	flex-direction: column;
+	width: 100%; /* Full width of container */
+  }
+  
+  .input {
+	width: 100%; /* Full width of the container */
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	color: black;
+	box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  .input:focus {
+	border-color: #3bb19b; /* Adjust to match the theme color */
+	outline: none;
+  }
+  
+  .input::placeholder {
+	color: black;
+  }
+  
+  .input:focus::placeholder {
+	color: #aaa;
+  }
+  
+  .error_msg {
+	color: red;
+	margin-bottom: 10px;
+  }
+  
+  
+  
+  .green_btn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .green_btn:hover {
+	background-color: #45a049;
+  }
+  
+  .white_btn {
+	background-color: white;
+	color: #061512; /* Adjust to match the theme color */
+  }
+  
+  @media (max-width: 768px) {
+	.login_form_container {
+	  flex-direction: column;
+	  width: 100%;
+	}
+  
+	.left, .right {
+	  flex: none;
+	  width: 100%;
+	}
+  
+	.right {
+	  padding: 20px; /* Adjusted padding */
+	}
+  }
+  
+  .form_container h1 {
+	color: black;
+  }
+  

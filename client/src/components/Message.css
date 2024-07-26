@@ -1,0 +1,49 @@
+/* Ensure this CSS is included in your styles module for correct ordering */
+.message_list {
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Ensure the message container is correctly styled for both types */
+.ai-message, .user-message {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  max-width: 70%;
+  padding: 8px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.ai-message {
+  align-self: flex-start; /* Align to the left */
+  background-color: rgb(24, 5, 5);
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.user-message {
+  align-self: flex-end; /* Align to the right */
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #0056b3;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.message-text {
+  word-wrap: break-word;
+}
+
+.message-time {
+  font-size: 0.75em;
+  color: white;
+  margin-top: 4px;
+  text-align: right;
+}

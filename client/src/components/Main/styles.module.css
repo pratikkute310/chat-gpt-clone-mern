@@ -1,0 +1,173 @@
+/* styles.module.css */
+
+.main_container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #050509; /* Dark mode background */
+	color: #ffffff; /* Light text for dark mode */
+  }
+  
+  .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #1f1f1f; /* Slightly lighter dark background for the navbar */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for navbar */
+  }
+  
+  .heading {
+	margin: 0;
+	font-size: 1.5em;
+  }
+  
+  .white_btn {
+	background-color: #ffffff;
+	color: #000000;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .white_btn:hover {
+	background-color: #e0e0e0;
+  }
+  
+  .flex_container {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	height: calc(100vh - 50px); /* Adjusted height for the main container */
+  }
+  
+  .sidebar {
+	flex: 1;
+	width: 25%; /* Set a fixed width or percentage for the sidebar */
+	background-color: #1f1f1f;
+	padding: 10px; /* Add padding inside the sidebar */
+	box-sizing: border-box; /* Ensure padding is included in the width calculation */
+	display: flex; /* Use flexbox for the layout */
+	flex-direction: column; /* Arrange children vertically */
+	border: 1px solid white; /* Debugging border to see the sidebar edges */
+  }
+  
+  .new {
+	display: flex;
+	width: calc(100% - 20px); /* Ensure the button spans full width minus padding */
+	height: 50px;
+	color: white;
+	border: 2px solid #ffffff; /* Adjust the border width and color as needed */
+	border-radius: 10px; /* Adjust the radius for more or less rounding */
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	background-color: #2d2d2d; /* Optional: background color to match dark theme */
+	cursor: pointer; /* Pointer cursor on hover */
+	margin: 10px; /* Add margin to create space around the button */
+  }
+  
+  .new:hover {
+	background-color: #3e3e3e; /* Optional: slightly lighter background on hover */
+  }
+  
+  .content {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	padding: 20px; /* Add padding for the content */
+  }
+  
+  .chat_window {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+  }
+  
+  .message_list {
+	flex: 1;
+	overflow-y: auto; /* Enable vertical scrolling if needed */
+	display: flex;
+	flex-direction: column-reverse; /* Reverse the order to show new messages at the bottom */
+  }
+  
+  .message_input_container {
+	padding: 10px 0;
+	border-top: 1px solid #333; /* Add a border between messages and input box */
+  }
+  
+  .form {
+	display: flex;
+	align-items: center;
+  }
+  
+  .input {
+	flex: 1;
+	padding: 8px 10px; /* Adjust padding for a smaller height */
+	border-radius: 5px;
+	border: 1px solid #555;
+	background-color: #222;
+	color: #fff;
+	height: 30px; /* Set a specific height */
+  }
+  
+  .submit_btn {
+	background-color: #4caf50;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin-left: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .submit_btn:hover {
+	background-color: #45a049;
+  }
+
+  /* Add this to styles.module.css */
+.add-chat {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-chat input {
+  width: 80%;
+  padding: 5px; /* Adjusted for smaller height */
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+.chat_window {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+  }
+  
+  .message_list {
+	flex-grow: 1;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+  }
+  
+  .message_input_container {
+	border-top: 1px solid #ccc;
+	padding: 10px;
+  }
+
+  
+  .no_chat_selected {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+  }
+  
